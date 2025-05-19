@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: winter --default, dim --prefersdark;
+}
+.active {
+  @apply bg-base-100;
+}
+.form-control {
+  @apply space-y-2;
+}
+input {
+  @apply w-full;
+}
