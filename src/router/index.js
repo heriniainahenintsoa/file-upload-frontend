@@ -2,6 +2,7 @@ import useAuthStore from "@/store/auth";
 import LoginView from "@/views/Auth/LoginView.vue";
 import RegisterView from "@/views/Auth/RegisterView.vue";
 import IndexView from "@/views/posts/IndexView.vue";
+import ProfileView from "@/views/users/ProfileView.vue";
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
@@ -34,6 +35,14 @@ const router = createRouter({
       path: "/posts",
       name: "posts.index",
       component: IndexView,
+    },
+    {
+      path: "/user/profile",
+      name: "users.profile",
+      component: ProfileView,
+      meta: {
+        auth: true,
+      },
     },
   ],
 });

@@ -5,7 +5,7 @@ const authStore = useAuthStore();
 </script>
 <template>
   <div
-    class="flex items-center justify-between p-2 rounded-xl fixed top-0 left-0 right-0 z-10 bg-base-100"
+    class="flex items-center justify-between p-2 rounded-xl fixed top-0 left-0 right-0 z-10 bg-base-100 max-w-6xl mx-auto"
   >
     <RouterLink :to="{ name: 'home' }">
       <h1 class="font-bold text-2xl">P</h1>
@@ -31,9 +31,7 @@ const authStore = useAuthStore();
             <summary>
               <div class="avatar">
                 <div class="size-6 rounded-full">
-                  <img
-                    src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp"
-                  />
+                  <img :src="authStore.user.image_url" />
                 </div>
               </div>
               <p>{{ authStore.user.name }}</p>
