@@ -4,7 +4,9 @@ import { RouterLink } from "vue-router";
 const authStore = useAuthStore();
 </script>
 <template>
-  <div class="flex items-center justify-between p-2 rounded-xl">
+  <div
+    class="flex items-center justify-between p-2 rounded-xl fixed top-0 left-0 right-0 z-10 bg-base-100"
+  >
     <RouterLink :to="{ name: 'home' }">
       <h1 class="font-bold text-2xl">P</h1>
     </RouterLink>

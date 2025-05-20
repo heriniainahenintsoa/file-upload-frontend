@@ -32,9 +32,7 @@ defineProps({
       </div>
       <div>...</div>
     </div>
-    <p>
-      {{ post.content }}
-    </p>
+    <p>{{ post.id }} {{ post.content }}</p>
     <div class="carousel carousel-end rounded-field">
       <div
         v-for="(image, index) in post.images"

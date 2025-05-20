@@ -2,7 +2,7 @@
 import Nav from "./Nav.vue";
 </script>
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto flex pt-[65px] pb-20">
     <Nav />
     <slot />
   </div>
